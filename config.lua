@@ -79,47 +79,105 @@ local Keys = {
 
 Config = {}
 
+Config.CheckOwnership = false -- If true, Only owner of vehicle can store items in trunk.
+Config.AllowPolice = true -- If true, police will be able to search players' trunks.
+
 Config.Locale = "en"
 
 Config.OpenKey = Keys["Y"]
 
-Config.OpenTime = 750
-
 -- Limit, unit can be whatever you want. Originally grams (as average people can hold 25kg)
-Config.Limit = 25000
+Config.Limit = 9000
 
 -- Default weight for an item:
 -- weight == 0 : The item do not affect character inventory weight
 -- weight > 0 : The item cost place on inventory
 -- weight < 0 : The item add place on inventory. Smart people will love it.
-Config.DefaultWeight = 10
+Config.DefaultWeight = 9
 
 Config.localWeight = {
-    bread = 125,
-    water = 330
+    bandage = 15,
+    beer = 15,
+    binoculars = 20,
+    blowpipe = 10,
+    bread = 10,
+    cannabis = 30,
+    carokit = 45,
+    carotool = 45,
+    clothe = 100,
+    coffee = 15,
+    coke = 50,
+    crack = 55,
+    fabric = 35,
+    fish = 25,
+    fishbait = 45,
+    fishingrod = 15,
+    fixkit = 45,
+    fixtool = 35,
+    gazbottle = 45,
+    handcuffs = 25,
+	jammeth = 55,
+	jewels = 100,
+	lockpick = 15,
+	lotteryticket = 5,
+	lsd = 25,
+	lsd_pooch = 45,
+	marijuana = 50,
+	medikit = 25,
+	phone = 15,
+	rope = 15,
+	shark = 45,
+	turtle = 35,
+	turtle_pooch = 25,
+	turtlebait = 30,
+	vodka = 25,
+	water = 15,
+    wool = 50,
+    battery = 50,
+    lowradio = 25,
+    stockrim = 100,
+    airbag = 35,
+    highradio = 35,
+    highrim = 150,
+    turbo = 55,
+	alive_chicken = 40,
+	packaged_chicken = 40,
+	slaughtered_chicken = 40,
+	stone = 50,
+	washed_stone = 25,
+	copper = 20,
+	iron = 25,
+	platinum = 35,
+	diamond = 15
 }
 
 Config.VehicleLimit = {
-    [0] = 30000, --Compact
-    [1] = 40000, --Sedan
-    [2] = 70000, --SUV
-    [3] = 25000, --Coupes
-    [4] = 30000, --Muscle
-    [5] = 15000, --Sports Classics
-    [6] = 15000, --Sports
-    [7] = 15000, --Super
-    [8] = 5000, --Motorcycles
-    [9] = 180000, --Off-road
-    [10] = 300000, --Industrial
-    [11] = 70000, --Utility
-    [12] = 100000, --Vans
+    [0] = 5000, --Compact
+    [1] = 7000, --Sedan
+    [2] = 10000, --SUV
+    [3] = 9000, --Coupes
+    [4] = 10000, --Muscle
+    [5] = 10000, --Sports Classics
+    [6] = 10000, --Sports
+    [7] = 3000, --Super
+    [8] = 1000, --Motorcycles
+    [9] = 10000, --Off-road
+    [10] = 10000, --Industrial
+    [11] = 10000, --Utility
+    [12] = 10000, --Vans
     [13] = 0, --Cycles
-    [14] = 5000, --Boats
-    [15] = 20000, --Helicopters
+    [14] = 10000, --Boats
+    [15] = 10000, --Helicopters
     [16] = 0, --Planes
-    [17] = 40000, --Service
-    [18] = 40000, --Emergency
+    [17] = 10000, --Service
+    [18] = 10000, --Emergency
     [19] = 0, --Military
-    [20] = 300000, --Commercial
+    [20] = 10000, --Commercial
     [21] = 0 --Trains
+}
+
+Config.VehiclePlate = {
+    taxi = "TAXI",
+    cop = "LSPD",
+    ambulance = "EMS0",
 }
