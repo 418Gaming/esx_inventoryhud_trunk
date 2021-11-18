@@ -1,7 +1,7 @@
 fx_version "adamant"
 game "gta5"
 
-author "Trsak"
+author "Trsak -- Edited by 418Gaming"
 
 description "ESX trunk inventory"
 
